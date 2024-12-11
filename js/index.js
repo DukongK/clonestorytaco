@@ -139,6 +139,8 @@ $(function () {
   //   동작 하는 방법 찾아내기
 
   $(".prev").on("click", function () {
+    // clearInterval(start);
+
     $(".c7_panel")
       .stop()
       .animate({ "margin-left": "-982px" }, function () {
@@ -158,26 +160,6 @@ $(function () {
       i--;
     }
   });
-  // $(".prev").on("click", function () {
-  //   $(".c7_panel")
-  //     .stop()
-  //     .animate({ "margin-left": "698px" }, function () {
-  //       $(".c7_panel li:last-child").prependTo(".c7_panel");
-  //       $(".c7_panel ").css({ "margin-left": "0px" });
-  //     });
-
-  //   $(".txt_wrap ul")
-  //     .stop()
-  //     .animate({ "margin-top": "-50px", opacity: "0" }, function () {
-  //       $(".txt_wrap ul li:first-child").appendTo(".txt_wrap ul");
-  //       $(".txt_wrap ul").css({ "margin-top": "-30px", opacity: "1" });
-  //     });
-
-  //   if (i == total - 1) {
-  //     i = 0;
-  //   } else {
-  //     i++;
-  //   }
 });
 
 // 스크롤 움직임
